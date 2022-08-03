@@ -7,11 +7,11 @@ import { CourseModel } from '../models/course.model';
   styleUrls: ['./course-list.component.css']
 })
 export class CourseListComponent implements OnInit {
-  course: Array<CourseModel> = [];
+  courses: Array<CourseModel> = [];
   constructor() { }
 
   ngOnInit(): void {
-    this.course = [
+    this.courses = [
       {
         id: 1,
         name: 'Angular: Forms',
@@ -34,7 +34,6 @@ export class CourseListComponent implements OnInit {
         releaseDate:'02/02/2022'
       }
     ]
-    console.log('cursos', this.course);
   }
 
 }
