@@ -6,5 +6,6 @@ export class CourseModel {
     code!: string;
     duration!: number;
     rating!:number;
+    releaseDate!: string;
 
 }
