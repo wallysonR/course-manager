@@ -19,7 +19,7 @@ export class CourseListComponent implements OnInit {
         price: 99.99,
         code:"xc2",
         duration:123,
-        rating: 2.3,
+        rating: 2.5,
         releaseDate:'02/02/2022'
 
       },
@@ -30,7 +30,7 @@ export class CourseListComponent implements OnInit {
         price: 99.99,
         code:"xc3",
         duration:120,
-        rating: 5.5,
+        rating: 4.0,
         releaseDate:'02/02/2022'
       }
     ]
