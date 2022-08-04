@@ -1,6 +1,7 @@
 export class CourseModel {
     id: number;
     name: string;
+    description: string;
     imageUrl: string;
     price: number;
     code: string;
