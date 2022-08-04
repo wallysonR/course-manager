@@ -13,7 +13,7 @@ import { ReplacePipe } from 'src/app/pipe/replace.pipe';
   imports: [
     CommonModule,
     StarModule,
-    FormsModule
+    FormsModule,
   ],
   exports:[CourseListComponent]
 })
