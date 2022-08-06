@@ -4,6 +4,7 @@ import { CourseListComponent } from './course-list.component';
 import { StarModule } from '../star/star.module';
 import { FormsModule } from '@angular/forms';
 import { ReplacePipe } from 'src/app/pipe/replace.pipe';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -14,6 +15,7 @@ import { ReplacePipe } from 'src/app/pipe/replace.pipe';
     CommonModule,
     StarModule,
     FormsModule,
+    RouterModule
   ],
   exports:[CourseListComponent]
 })
