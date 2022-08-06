@@ -11,7 +11,11 @@ import { RouterLink, RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule
+    RouterModule.forChild([
+      {
+        path: 'course/info/:id', component: CourseInfoComponent
+      },
+    ])
   ],
   exports: [CourseInfoComponent]
 })

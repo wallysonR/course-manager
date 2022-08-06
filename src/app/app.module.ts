@@ -27,12 +27,6 @@ import { HttpClientModule } from '@angular/common/http';
       {
         path: '', redirectTo: 'courses', pathMatch: 'full'
       },
-      {
-        path: 'courses', component: CourseListComponent
-      },
-      {
-        path: 'course/info/:id', component: CourseInfoComponent
-      },
       // '**' é quando nao tem rota 
       {
         path: '**', component: ErrorNotFoundComponent
