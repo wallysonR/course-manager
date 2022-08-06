@@ -1,1 +1,53 @@
-<h2>O id é {{courseId}}</h2>
+<h2>Course Info</h2>
+
+<hr />
+
+<form #courseForm="ngForm">
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Name:</label>
+        <div class="col-sm-10">
+            <input [(ngModel)]="course.name" required="true" name="name" #courseName="ngModel"
+                [ngClass]="{'is-invalid': courseName.invalid}" class="form-control">
+            <div class="invalid-feedback">
+                <span>Course Name is required</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Price:</label>
+        <div class="col-sm-10">
+            <input [(ngModel)]="course.price" required="true" name="price" type="number" #coursePrice="ngModel"
+                [ngClass]="{'is-invalid': coursePrice.invalid}" class="form-control">
+            <div class="invalid-feedback">
+                <span>Course Price is required</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Rating:</label>
+        <div class="col-sm-10">
+            <input [(ngModel)]="course.rating" min="0" max="5" maxlength="4" step="0.1" required="true" name="rating"
+                type="number" #courseRating="ngModel" [ngClass]="{'is-invalid': courseRating.invalid}"
+                class="form-control">
+            <div class="invalid-feedback">
+                <span>Course Rating is required or Invalid</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Description:</label>
+        <div class="col-sm-10">
+            <textarea [(ngModel)]="course.description" required="true" name="description" #courseDescription="ngModel"
+                [ngClass]="{'is-invalid': courseDescription.invalid}" class="form-control"></textarea>
+            <div class="invalid-feedback">
+                <span>Course Description is required or Invalid</span>
+            </div>
+        </div>
+    </div>
+
+    <button [disabled]="courseForm.invalid" (click)="save()" class="btn btn-primary button-rigth">Save</button>
+    <button [routerLink]="['/courses']" class="btn btn-secondary">Back</button>
+</form>
