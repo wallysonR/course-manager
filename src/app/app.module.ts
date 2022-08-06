@@ -9,6 +9,7 @@ import { ErrorNotFoundModule } from './error-not-found/error-not-found.module';
 import { NavBarModule } from './nav-bar/nav-bar.module';
 import { CourseInfoComponent } from './course-info/course-info.component';
 import { CourseInfoModule } from './course-info/course-info.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { CourseInfoModule } from './course-info/course-info.module';
 
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     CourseListModule,
     NavBarModule,

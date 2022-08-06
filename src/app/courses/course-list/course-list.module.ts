@@ -15,7 +15,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     StarModule,
     FormsModule,
-    RouterModule
+    RouterModule,
   ],
   exports:[CourseListComponent]
 })
